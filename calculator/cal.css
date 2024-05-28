@@ -1,83 +1,58 @@
-.btn-hover a {
-    color: white;
-    text-decoration: none;
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+    font-family: Arial, sans-serif;
 }
 
-.btn-hover a:hover {
-    color: white;
-    text-decoration: none;
-}
-.button.btn-hover.color-9.heading {
-    width:100%;
-    border-radius:10px;
-    text-align:center;
-    margin-left: 0%;
-    margin-right: 0%;
+.calculator {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    width: 400px;
+    max-width: 90%;
 }
 
-.btn-hover {
-    width: 150px;
-    font-size: 16px;
-    font-weight: 600;
+.display {
+    background-color: #333;
     color: #fff;
+    font-size: 2.5em;
+    padding: 20px;
+    text-align: right;
+    border-bottom: 2px solid #ccc;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 20px;
+}
+
+.btn {
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    font-size: 1.5em;
+    padding: 20px;
     cursor: pointer;
-    margin: 20px;
-    height: 40px;
-    text-align: center;
-    border: none;
-    background-size: 300% 100%;
-
-    border-radius: 50px;
-    -moz-transition: all .4s ease-in-out;
-    -o-transition: all .4s ease-in-out;
-    -webkit-transition: all .4s ease-in-out;
-    transition: all .4s ease-in-out;
-}
-
-.btn-hover:hover {
-    background-position: 100% 0;
-    -moz-transition: all .4s ease-in-out;
-    -o-transition: all .4s ease-in-out;
-    -webkit-transition: all .4s ease-in-out;
-    transition: all .4s ease-in-out;
-}
-
-.btn-hover:focus {
     outline: none;
+    transition: background-color 0.2s;
+    border-radius: 5px;
 }
 
-.btn-hover.color-5 {
-    background-image: linear-gradient(to right, #0ba360, #3cba92, #30dd8a, #2bb673);
-    box-shadow: 0 4px 15px 0 rgba(23, 168, 108, 0.75);
+.btn:hover {
+    background-color: #ddd;
 }
 
-.btn-hover.color-9 {
-    background-image: linear-gradient(to right, #25aae1, #4481eb, #04befe, #3f86ed);
-    box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
-}
-.button {
-    background-color: #c9e3ac;
-    border-radius: 12px;
-    color: rgb(0, 0, 0);
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    width: 150px;
-    box-shadow: 0 8px 16px 0 rgba(57, 57, 57, 0.2), 0 6px 20px 0 rgba(46, 46, 46, 0.19);
+.btn:active {
+    background-color: #ccc;
 }
 
-input[type=text] {
-    width: 68%;
-    padding: 12px 20px;
-    margin: 20px 0;
-    box-sizing: border-box;
-    border: 2px solid #ccc;
-    border-radius: 4px;
+.btn:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 0, 255, 0.5);
 }
-.border{
-    border: 1px solid #000; /* 1px solid black border */
-    padding: 10px; /* optional: add padding to the element */
-    margin: 50px; 
-}
-
